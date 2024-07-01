@@ -1,1 +1,3 @@
-# winning-hackathon-team
+# Winning Hackathon Team
+
+Team Mentor: Angus Henderson
