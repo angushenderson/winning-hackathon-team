@@ -31,27 +31,27 @@
         <p style = "color: white" class="text-center">SERVED EVERY DAY SINCE 2024</p>
         <p style = "color: white" class="text-center">Code Crackers opened on 25 July 2024. Head Chef/Owner  Angus Henderson began making Chinese cuisine and orchestrating a takeaway service out of his humble home in Stirling. Today, Code Crackers has a permanent location in Glasgow, Scotland. Beloved by many, the restaurant celebrates 20+ hours of classic, made from scratch Scottish cooking.</p>
 
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://orders.co/static/f6275b51244b44b7d6559f699922c4fa/f659b/Chinese-Restaurant-Names-Creative-Ideas-for-Your-Restaurant.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/about_us/4.jpg?tr=w-3840" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://www.takeaway.com/foodwiki/uploads/sites/11/2019/05/chinese-cuisine-1440x600.jpg" class="d-block w-100" alt="...">
-          </div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://orders.co/static/f6275b51244b44b7d6559f699922c4fa/f659b/Chinese-Restaurant-Names-Creative-Ideas-for-Your-Restaurant.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/about_us/4.jpg?tr=w-3840" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="https://ichef.bbci.co.uk/images/ic/1920x1080/p0gfw949.jpg" class="d-block w-100">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
 
     <div class="reviews">
         <h2 style = "color:gold" class="text-center">Reviews</h2>
@@ -71,22 +71,16 @@
     <div style = "color:gold" class="leave review">
         <h4>Leave your own review</h4>
         <div class="input-group">
-            <textarea class="form-control"></textarea>
+            <textarea class="form-control" id = "review-input"></textarea>
         </div>
     </div>
+
+    <button class="btn btn-warning" onClick="document.getElementById('review-input').value = ''">Submit</button>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        const myCarouselElement = document.querySelector('#carouselExampleIndicators')
 
-        const carousel = new bootstrap.Carousel(myCarouselElement, {
-            interval: 2000,
-            touch: false
-        })
-    </script>
 
-    <button type="button" class="btn btn-warning">Submit Review</button>
 </body>
 </html>
