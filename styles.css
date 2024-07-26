@@ -3,6 +3,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#pokemonInfo {
-    margin-top: 20px;
+.btn-outline-nav {
+    color: rgb(175, 12, 7);
+    border-color: rgb(175, 12, 7);
+}
+
+.btn-outline-nav:hover {
+    background: rgb(175, 12, 7);
 }
