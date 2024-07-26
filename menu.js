@@ -5,8 +5,13 @@ async function getMeals() {
             throw new Error('Meals not found');
         }
         const meals = await Response.json();
+        console.log(meals);
     } catch (error) {
         console.error('Error fetching meal list:', error)
         alert('An error occured fetching the meals. Maybe try again?')
     }
+}
+
+function displayMeals(strMeal, strMealThumb) {
+    document.getElementById(mealPhoto)
 }
